@@ -46,16 +46,34 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="fComentarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fComentarios.Designer.cs">
+      <DependentUpon>fComentarios.cs</DependentUpon>
+    </Compile>
     <Compile Include="fRecursos.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="fRecursos.Designer.cs">
       <DependentUpon>fRecursos.cs</DependentUpon>
     </Compile>
+    <Compile Include="fSolicitud.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fSolicitud.Designer.cs">
+      <DependentUpon>fSolicitud.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="fComentarios.resx">
+      <DependentUpon>fComentarios.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="fRecursos.resx">
       <DependentUpon>fRecursos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fSolicitud.resx">
+      <DependentUpon>fSolicitud.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -78,6 +96,16 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CapaNegocio\CapaNegocio.csproj">
+      <Project>{b3b38286-c465-4853-bcba-9852f5114f43}</Project>
+      <Name>CapaNegocio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ClassLibrary1\capaEntidades.csproj">
+      <Project>{44f0a529-8e46-4776-a0e9-761f426ef2b0}</Project>
+      <Name>capaEntidades</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

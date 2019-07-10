@@ -8,7 +8,7 @@ using capaEntidades;
 
 namespace CapaNegocio
 {
-    class logicaNegocioCuentas
+   public class logicaNegocioCuentas
     {
         public class logicaNegocioComentarios
         {

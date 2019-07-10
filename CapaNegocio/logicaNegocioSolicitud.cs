@@ -8,7 +8,7 @@ using CapaDatos;
 
 namespace CapaNegocio
 {
-    class logicaNegocioSolicitud
+  public  class logicaNegocioSolicitud
     {
 
             accesoDatosSolicitud acs = new accesoDatosSolicitud();
@@ -39,6 +39,10 @@ namespace CapaNegocio
                 return acs.BuscarSolicitud(dato);
 
             }
-        
+
+        public int insertarSolicitud(Solicitud objetoSolicitud)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

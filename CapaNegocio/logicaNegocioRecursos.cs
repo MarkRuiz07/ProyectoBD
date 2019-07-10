@@ -8,38 +8,37 @@ using capaEntidades;
 
 namespace CapaNegocio
 {
-    class logicaNegocioRecursos
+   public class logicaNegocioRecursos
     {
-        public class logicaNegocioComentarios
+        
+        accesoDatosRecursos ar = new accesoDatosRecursos();
+
+        public int insertarRecursos(Recursos r)
         {
-            accesoDatosRecursos ar = new accesoDatosRecursos();
-
-            public int insertarRecursos(Recursos r)
-            {
-                return ar.insertarRecursos(r);
-            }
-
-            public List<Recursos> listarRecursos()
-            {
-                return ar.listarRecursos();
-            }
-
-            public int EliminarRecursos(int idrec)
-            {
-
-                return ar.EliminarRecursos(idrec);
-            }
-
-            public int EditarRecursos(Recursos r)
-            {
-                return ar.EditarRecursos(r);
-            }
-
-            public List<Recursos> BuscarRecursos(string dato)
-            {
-                return ar.BuscarRecursos(dato);
-
-            }
+            return ar.insertarRecursos(r);
         }
+
+        public List<Recursos> listarRecursos()
+        {
+            return ar.listarRecursos();
+        }
+
+        public int EliminarRecursos(int idrec)
+        {
+
+            return ar.EliminarRecursos(idrec);
+        }
+
+        public int EditarRecursos(Recursos r)
+        {
+            return ar.EditarRecursos(r);
+        }
+
+        public List<Recursos> BuscarRecursos(string dato)
+        {
+            return ar.BuscarRecursos(dato);
+
+        }
+        
     }
 }

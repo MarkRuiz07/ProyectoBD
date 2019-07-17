@@ -137,9 +137,9 @@ namespace CapaDatos
                 cm = new SqlCommand("LosRecursos", cnx);
                 cm.Parameters.AddWithValue("@b", 4);
                 cm.Parameters.AddWithValue("idrecursos", r.idrecursos); //parametro del procedimiento almacenado
-                cm.Parameters.AddWithValue("nombrer", "");
+                cm.Parameters.AddWithValue("nombrer", r.nombrer);
                 cm.Parameters.AddWithValue("codigo", "");
-                cm.Parameters.AddWithValue("@descripcion", r.descripcion);
+                cm.Parameters.AddWithValue("@descripcion", "");
 
                 cm.CommandType = CommandType.StoredProcedure;
                 cnx.Open();
@@ -164,11 +164,11 @@ namespace CapaDatos
 
                 SqlConnection cnx = cn.conectar(); //Conexion
                 cm = new SqlCommand("LosRecursos", cnx);
-                cm.Parameters.AddWithValue("b", 5);
-                cm.Parameters.AddWithValue("@idrecursos", dato);
-                cm.Parameters.AddWithValue("@nombrer", "");
+                cm.Parameters.AddWithValue("b", 6);
+                cm.Parameters.AddWithValue("@idrecursos", "");
+                cm.Parameters.AddWithValue("@nombrer", dato);
                 cm.Parameters.AddWithValue("@codigo", "");
-                cm.Parameters.AddWithValue("@descripcion", dato);
+                cm.Parameters.AddWithValue("@descripcion", "");
 
                 cm.CommandType = CommandType.StoredProcedure;
                 cnx.Open();

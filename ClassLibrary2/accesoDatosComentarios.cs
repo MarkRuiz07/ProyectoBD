@@ -168,7 +168,7 @@ namespace CapaDatos
 
                 SqlConnection cnx = cn.conectar(); //Conexion
                 cm = new SqlCommand("comentar", cnx);
-                cm.Parameters.AddWithValue("b", 5);
+                cm.Parameters.AddWithValue("b", 6);
                 cm.Parameters.AddWithValue("@idcomentario", "");
                 cm.Parameters.AddWithValue("@nombres", dato);
                 cm.Parameters.AddWithValue("@correo", "");

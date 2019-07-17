@@ -166,7 +166,7 @@ namespace CapaDatos
 
                 SqlConnection cnx = cn.conectar(); //Conexion
                 cm = new SqlCommand("LasCuentas", cnx);
-                cm.Parameters.AddWithValue("b", 5);
+                cm.Parameters.AddWithValue("b", 6);
                 cm.Parameters.AddWithValue("@idcuentas", dato);
                 cm.Parameters.AddWithValue("@nombreuser", "");
                 cm.Parameters.AddWithValue("@clave", "");

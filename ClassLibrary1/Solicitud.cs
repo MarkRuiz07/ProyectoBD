@@ -14,9 +14,9 @@ namespace capaEntidades
 
         public String nivel { get; set; }
 
-        public String fechasolicitud { get; set; }
+        public DateTime fechasolicitud { get; set; }
         
-        public String fechauso { get; set; }
+        public DateTime fechauso { get; set; }
 
         public String horainicio { get; set; }
 

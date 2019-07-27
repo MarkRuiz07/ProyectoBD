@@ -3,3 +3,8 @@ c:\users\usuario\documents\visual studio 2015\Projects\Proyecto BD\ClassLibrary1
 c:\users\usuario\documents\visual studio 2015\Projects\Proyecto BD\ClassLibrary1\obj\Debug\capaEntidades.csprojResolveAssemblyReference.cache
 c:\users\usuario\documents\visual studio 2015\Projects\Proyecto BD\ClassLibrary1\obj\Debug\ClassLibrary1.dll
 c:\users\usuario\documents\visual studio 2015\Projects\Proyecto BD\ClassLibrary1\obj\Debug\ClassLibrary1.pdb
+C:\Users\Usuario\Documents\GitHub\ProyectoBD\ClassLibrary1\bin\Debug\ClassLibrary1.dll
+C:\Users\Usuario\Documents\GitHub\ProyectoBD\ClassLibrary1\bin\Debug\ClassLibrary1.pdb
+C:\Users\Usuario\Documents\GitHub\ProyectoBD\ClassLibrary1\obj\Debug\capaEntidades.csprojResolveAssemblyReference.cache
+C:\Users\Usuario\Documents\GitHub\ProyectoBD\ClassLibrary1\obj\Debug\ClassLibrary1.dll
+C:\Users\Usuario\Documents\GitHub\ProyectoBD\ClassLibrary1\obj\Debug\ClassLibrary1.pdb

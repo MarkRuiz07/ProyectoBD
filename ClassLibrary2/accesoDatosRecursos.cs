@@ -62,7 +62,7 @@ namespace CapaDatos
 
                 SqlConnection cnx = cn.conectar(); //Conexion
                 cm = new SqlCommand("LosRecursos", cnx);
-                cm.Parameters.AddWithValue("b", 3);
+                cm.Parameters.AddWithValue("@b", 3);
                 cm.Parameters.AddWithValue("@idrecursos", "");
                 cm.Parameters.AddWithValue("@nombrer", "");
                 cm.Parameters.AddWithValue("@codigo", "");
@@ -136,9 +136,9 @@ namespace CapaDatos
 
                 cm = new SqlCommand("LosRecursos", cnx);
                 cm.Parameters.AddWithValue("@b", 4);
-                cm.Parameters.AddWithValue("idrecursos", r.idrecursos); //parametro del procedimiento almacenado
-                cm.Parameters.AddWithValue("nombrer", r.nombrer);
-                cm.Parameters.AddWithValue("codigo", "");
+                cm.Parameters.AddWithValue("@idrecursos", r.idrecursos); //parametro del procedimiento almacenado
+                cm.Parameters.AddWithValue("@nombrer", r.nombrer);
+                cm.Parameters.AddWithValue("@codigo", "");
                 cm.Parameters.AddWithValue("@descripcion", "");
 
                 cm.CommandType = CommandType.StoredProcedure;
@@ -164,7 +164,7 @@ namespace CapaDatos
 
                 SqlConnection cnx = cn.conectar(); //Conexion
                 cm = new SqlCommand("LosRecursos", cnx);
-                cm.Parameters.AddWithValue("b", 6);
+                cm.Parameters.AddWithValue("@b", 6);
                 cm.Parameters.AddWithValue("@idrecursos", "");
                 cm.Parameters.AddWithValue("@nombrer", dato);
                 cm.Parameters.AddWithValue("@codigo", "");

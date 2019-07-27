@@ -11,7 +11,7 @@
      OnRowDeleting="GVcomentarios_RowDeleting"
     OnDataBound="GVcomentarios_DataBound"
     
-     AllowPaging="true">
+     AllowPaging="true" OnSelectedIndexChanged="GVcomentarios_SelectedIndexChanged">
 
     <HeaderStyle BackColor="#337ab7" Font-Bold="false" ForeColor="White" />
     <EditRowStyle BackColor="#ffffcc" />

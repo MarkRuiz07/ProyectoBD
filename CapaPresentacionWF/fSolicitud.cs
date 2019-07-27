@@ -34,13 +34,14 @@ namespace CapaPresentacionWF
                     Solicitud objetoSolicitud = new Solicitud();
                     objetoSolicitud.aula = textBoxAula.Text;
                     objetoSolicitud.nivel = textBoxNivel.Text;
-                    objetoSolicitud.fechasolicitud = textBoxFechaSolicitud.Text;
-                    objetoSolicitud.fechauso = textBoxFechaUso.Text;
+                    objetoSolicitud.fechasolicitud = dateTimePickerFS.Value;
+                    objetoSolicitud.fechauso = dateTimePickerFU.Value;
                     objetoSolicitud.horainicio = textBoxHoraInicio.Text;
                     objetoSolicitud.horafinal = textBoxHoraFinal.Text;
                     objetoSolicitud.carrera = textBoxCarrera.Text;
-                    objetoSolicitud.asignatura = textBoxCarrera.Text;
-
+                    objetoSolicitud.idrecursos = Convert.ToInt32(textBoxIDRecursos.Text);
+                    objetoSolicitud.idusuario = Convert.ToInt32(textBoxIDUsuario.Text);
+                    objetoSolicitud.asignatura = textBoxAsignatura.Text;
 
                     if (logicaNS.insertarSolicitud(objetoSolicitud) > 0)
                     {
@@ -48,12 +49,16 @@ namespace CapaPresentacionWF
                         dataGridViewSolicitud.DataSource = logicaNS.listarSolicitud();
                         textBoxAula.Text = "";
                         textBoxNivel.Text = "";
-                        textBoxFechaSolicitud.Text = "";
-                        textBoxFechaUso.Text = "";
+                        dateTimePickerFS.Text = "";
+                        dateTimePickerFU.Text = "";
                         textBoxHoraInicio.Text = "";
                         textBoxHoraFinal.Text = "";
                         textBoxCarrera.Text = "";
+                        textBoxIDRecursos.Text = "";
+                        textBoxIDUsuario.Text = "";
                         textBoxAsignatura.Text = "";
+
+
                         tabSolicitud.SelectedTab = tabPage2;
                     }
                     else
@@ -69,13 +74,14 @@ namespace CapaPresentacionWF
                     objetoSolicitud.idsolicitud = Convert.ToInt32(textBoxID.Text);
                     objetoSolicitud.aula = textBoxAula.Text;
                     objetoSolicitud.nivel = textBoxNivel.Text;
-                    objetoSolicitud.fechasolicitud = textBoxFechaSolicitud.Text;
-                    objetoSolicitud.fechauso = textBoxFechaUso.Text;
+                    objetoSolicitud.fechasolicitud = dateTimePickerFS.Value;
+                    objetoSolicitud.fechauso = dateTimePickerFU.Value;
                     objetoSolicitud.horainicio = textBoxHoraInicio.Text;
                     objetoSolicitud.horafinal = textBoxHoraFinal.Text;
                     objetoSolicitud.carrera = textBoxCarrera.Text;
+                    objetoSolicitud.idrecursos = Convert.ToInt32(textBoxIDRecursos.Text);
+                    objetoSolicitud.idusuario = Convert.ToInt32(textBoxIDUsuario.Text);
                     objetoSolicitud.asignatura = textBoxAsignatura.Text;
-
 
                     if (logicaNS.EditarSolicitud(objetoSolicitud) > 0)
                     {
@@ -83,11 +89,13 @@ namespace CapaPresentacionWF
                         dataGridViewSolicitud.DataSource = logicaNS.listarSolicitud();
                         textBoxAula.Text = "";
                         textBoxNivel.Text = "";
-                        textBoxFechaSolicitud.Text = "";
-                        textBoxFechaUso.Text = "";
+                        dateTimePickerFS.Text = "";
+                        dateTimePickerFU.Text = "";
                         textBoxHoraInicio.Text = "";
                         textBoxHoraFinal.Text = "";
                         textBoxCarrera.Text = "";
+                        textBoxIDRecursos.Text = "";
+                        textBoxIDUsuario.Text = "";
                         textBoxAsignatura.Text = "";
                         tabSolicitud.SelectedTab = tabPage2;
 
@@ -106,6 +114,44 @@ namespace CapaPresentacionWF
 
                 MessageBox.Show("ERROR");
             }
+
+        }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridViewSolicitud_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void fSolicitud_Load(object sender, EventArgs e)
+        {
+            textBoxID.Visible = false; //Ocultando ID
+            labelID.Visible = false;
+            dataGridViewSolicitud.DataSource = logicaNS.listarSolicitud();
+
+
+            
+        }
+
+        private void buttonEliminar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Editar_Click(object sender, EventArgs e)
+        {
+            textBoxID.Visible = true;
+            textBoxID.Enabled = false;
+            labelID.Visible = true;
+
+            textBoxID.Text = dataGridViewSolicitud.CurrentRow.Cells["idsolicitud"].Value.ToString();
+            textBoxAula.Text = dataGridViewSolicitud.CurrentRow.Cells["aula"].Value.ToString();
+            textBoxNivel.Text = dataGridViewSolicitud.CurrentRow.Cells["nivel"].Value.ToString();
+            dateTimePickerFS = dataGridViewSolicitud.CurrentRow.Cells["fechasolicitud"];
 
         }
     }

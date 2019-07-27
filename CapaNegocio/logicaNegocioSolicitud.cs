@@ -13,7 +13,7 @@ namespace CapaNegocio
 
             accesoDatosSolicitud acs = new accesoDatosSolicitud();
 
-            public int insertarComentarios(Solicitud s)
+            public int insertarSolicitud(Solicitud s)
             {
                 return acs.insertarSolicitud(s);
             }
@@ -40,9 +40,5 @@ namespace CapaNegocio
 
             }
 
-        public int insertarSolicitud(Solicitud objetoSolicitud)
-        {
-            throw new NotImplementedException();
-        }
     }
 }

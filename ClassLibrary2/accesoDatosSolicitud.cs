@@ -29,15 +29,15 @@ namespace CapaDatos
                 SqlConnection cnx = cn.conectar(); //Conexion
 
                 cm = new SqlCommand("LaSolicitud", cnx); //Nombre del procedimiento 
-                cm.Parameters.AddWithValue("@b", 1); //Valores que toman los parametros
-                cm.Parameters.AddWithValue("@idsolicitud", ""); //del procedimiento
+                cm.Parameters.AddWithValue("@b", 1);
+                cm.Parameters.AddWithValue("@idsolicitud", "");
                 cm.Parameters.AddWithValue("@aula", so.aula);
                 cm.Parameters.AddWithValue("@nivel", so.nivel);
                 cm.Parameters.AddWithValue("@fechasolicitud", so.fechasolicitud);
                 cm.Parameters.AddWithValue("@fechauso", so.fechauso);
                 cm.Parameters.AddWithValue("@horainicio", so.horainicio);
                 cm.Parameters.AddWithValue("@horafinal", so.horafinal);
-                cm.Parameters.AddWithValue("@carrera", so.carrera);
+                cm.Parameters.AddWithValue("@carrera",so.carrera);
                 cm.Parameters.AddWithValue("@idrecursos", so.idrecursos);
                 cm.Parameters.AddWithValue("@idusuario", so.idusuario);
                 cm.Parameters.AddWithValue("@asignatura", so.asignatura);
@@ -68,7 +68,7 @@ namespace CapaDatos
 
                 SqlConnection cnx = cn.conectar(); //Conexion
                 cm = new SqlCommand("LaSolicitud", cnx);
-                cm.Parameters.AddWithValue("b", 3);
+                cm.Parameters.AddWithValue("@b", 3);
                 cm.Parameters.AddWithValue("@idsolicitud", "");
                 cm.Parameters.AddWithValue("@aula", "");
                 cm.Parameters.AddWithValue("@nivel", "");
@@ -92,8 +92,8 @@ namespace CapaDatos
                     s.idsolicitud = Convert.ToInt32(dr["idsolicitud"].ToString());
                     s.aula = dr["aula"].ToString();
                     s.nivel = dr["nivel"].ToString();
-                    s.fechasolicitud = dr["fechasolicitud"].ToString();
-                    s.fechauso = dr["fechauso"].ToString();
+                    s.fechasolicitud = Convert.ToDateTime(dr["fechasolicitud"].ToString());
+                    s.fechauso = Convert.ToDateTime(dr["fechauso"].ToString());
                     s.horainicio = dr["horainicio"].ToString();
                     s.horafinal = dr["horafinal"].ToString();
                     s.carrera = dr["carrera"].ToString();
@@ -127,7 +127,7 @@ namespace CapaDatos
 
                 cm = new SqlCommand("LaSolicitud", cnx);
                 cm.Parameters.AddWithValue("@b", 2);
-                cm.Parameters.AddWithValue("idsolicitud", idsolici); //parametro del procedimiento almacenado
+                cm.Parameters.AddWithValue("@idsolicitud", idsolici); //parametro del procedimiento almacenado
                 cm.Parameters.AddWithValue("@aula", "");
                 cm.Parameters.AddWithValue("@nivel", "");
                 cm.Parameters.AddWithValue("@fechasolicitud", "");
@@ -164,16 +164,17 @@ namespace CapaDatos
 
                 cm = new SqlCommand("LaSolicitud", cnx);
                 cm.Parameters.AddWithValue("@b", 4);
-                cm.Parameters.AddWithValue("idsolicitud", s.idsolicitud); //parametro del procedimiento almacenado
+                cm.Parameters.AddWithValue("@idsolicitud", s.idsolicitud); //parametro del procedimiento almacenado
                 cm.Parameters.AddWithValue("@aula", s.aula);
-                cm.Parameters.AddWithValue("@nivel", "");
-                cm.Parameters.AddWithValue("@fechasolicitud", "");
-                cm.Parameters.AddWithValue("@fechauso", "");
-                cm.Parameters.AddWithValue("@horainicio", "");
-                cm.Parameters.AddWithValue("@carrera", "");
-                cm.Parameters.AddWithValue("@idrecursos", "");
-                cm.Parameters.AddWithValue("@idusuario", "");
-                cm.Parameters.AddWithValue("@asignatura", "");
+                cm.Parameters.AddWithValue("@nivel", s.nivel);
+                cm.Parameters.AddWithValue("@fechasolicitud", s.fechasolicitud);
+                cm.Parameters.AddWithValue("@fechauso", s.fechauso);
+                cm.Parameters.AddWithValue("@horainicio", s.horainicio);
+                cm.Parameters.AddWithValue("@horafinal", s.horafinal);
+                cm.Parameters.AddWithValue("@carrera", s.carrera);
+                cm.Parameters.AddWithValue("@idrecursos",s.idrecursos);
+                cm.Parameters.AddWithValue("@idusuario", s.idusuario);
+                cm.Parameters.AddWithValue("@asignatura", s.asignatura);
 
                 cm.CommandType = CommandType.StoredProcedure;
                 cnx.Open();
@@ -198,7 +199,7 @@ namespace CapaDatos
 
                 SqlConnection cnx = cn.conectar(); //Conexion
                 cm = new SqlCommand("LaSolicitud", cnx);
-                cm.Parameters.AddWithValue("b", 6);
+                cm.Parameters.AddWithValue("@b", 6);
                 cm.Parameters.AddWithValue("@idsolicitud", dato);
                 cm.Parameters.AddWithValue("@aula", dato);
                 cm.Parameters.AddWithValue("@nivel", "");
@@ -222,8 +223,8 @@ namespace CapaDatos
                     s.idsolicitud = Convert.ToInt32(dr["idsolicitud"].ToString());
                     s.aula = dr["aula"].ToString();
                     s.nivel = dr["nivel"].ToString();
-                    s.fechasolicitud = dr["fechasolicitud"].ToString();
-                    s.fechauso = dr["fechauso"].ToString();
+                    s.fechasolicitud = Convert.ToDateTime(dr["fechasolicitud"].ToString());
+                    s.fechauso = Convert.ToDateTime(dr["fechauso"].ToString()); 
                     s.horainicio = dr["horainicio"].ToString();
                     s.horafinal = dr["horafinal"].ToString();
                     s.carrera = dr["carrera"].ToString();

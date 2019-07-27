@@ -15,3 +15,20 @@ C:\Users\Usuario\Documents\Visual Studio 2015\Projects\Proyecto BD\CapaPresentac
 C:\Users\Usuario\Documents\Visual Studio 2015\Projects\Proyecto BD\CapaPresentacionWF\obj\Debug\CapaPresentacionWF.csproj.GenerateResource.Cache
 C:\Users\Usuario\Documents\Visual Studio 2015\Projects\Proyecto BD\CapaPresentacionWF\obj\Debug\CapaPresentacionWF.exe
 C:\Users\Usuario\Documents\Visual Studio 2015\Projects\Proyecto BD\CapaPresentacionWF\obj\Debug\CapaPresentacionWF.pdb
+C:\Users\Usuario\Documents\GitHub\ProyectoBD\CapaPresentacionWF\bin\Debug\CapaPresentacionWF.exe.config
+C:\Users\Usuario\Documents\GitHub\ProyectoBD\CapaPresentacionWF\obj\Debug\CapaPresentacionWF.exe
+C:\Users\Usuario\Documents\GitHub\ProyectoBD\CapaPresentacionWF\obj\Debug\CapaPresentacionWF.pdb
+C:\Users\Usuario\Documents\GitHub\ProyectoBD\CapaPresentacionWF\bin\Debug\CapaPresentacionWF.exe
+C:\Users\Usuario\Documents\GitHub\ProyectoBD\CapaPresentacionWF\bin\Debug\CapaPresentacionWF.pdb
+C:\Users\Usuario\Documents\GitHub\ProyectoBD\CapaPresentacionWF\bin\Debug\CapaNegocio.dll
+C:\Users\Usuario\Documents\GitHub\ProyectoBD\CapaPresentacionWF\bin\Debug\ClassLibrary1.dll
+C:\Users\Usuario\Documents\GitHub\ProyectoBD\CapaPresentacionWF\bin\Debug\ClassLibrary2.dll
+C:\Users\Usuario\Documents\GitHub\ProyectoBD\CapaPresentacionWF\bin\Debug\CapaNegocio.pdb
+C:\Users\Usuario\Documents\GitHub\ProyectoBD\CapaPresentacionWF\bin\Debug\ClassLibrary1.pdb
+C:\Users\Usuario\Documents\GitHub\ProyectoBD\CapaPresentacionWF\bin\Debug\ClassLibrary2.pdb
+C:\Users\Usuario\Documents\GitHub\ProyectoBD\CapaPresentacionWF\obj\Debug\CapaPresentacionWF.csprojResolveAssemblyReference.cache
+C:\Users\Usuario\Documents\GitHub\ProyectoBD\CapaPresentacionWF\obj\Debug\CapaPresentacionWF.fRecursos.resources
+C:\Users\Usuario\Documents\GitHub\ProyectoBD\CapaPresentacionWF\obj\Debug\CapaPresentacionWF.fSolicitud.resources
+C:\Users\Usuario\Documents\GitHub\ProyectoBD\CapaPresentacionWF\obj\Debug\CapaPresentacionWF.Properties.Resources.resources
+C:\Users\Usuario\Documents\GitHub\ProyectoBD\CapaPresentacionWF\obj\Debug\CapaPresentacionWF.csproj.GenerateResource.Cache
+C:\Users\Usuario\Documents\GitHub\ProyectoBD\CapaPresentacionWF\obj\Debug\CapaPresentacionWF.MDIPrincipal.resources

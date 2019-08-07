@@ -151,7 +151,7 @@ namespace CapaPresentacionWF
             textBoxID.Text = dataGridViewSolicitud.CurrentRow.Cells["idsolicitud"].Value.ToString();
             textBoxAula.Text = dataGridViewSolicitud.CurrentRow.Cells["aula"].Value.ToString();
             textBoxNivel.Text = dataGridViewSolicitud.CurrentRow.Cells["nivel"].Value.ToString();
-            dateTimePickerFS = dataGridViewSolicitud.CurrentRow.Cells["fechasolicitud"];
+            dateTimePickerFS = dataGridViewSolicitud.Value.ToString("dd,MM,yyyy");
 
         }
     }

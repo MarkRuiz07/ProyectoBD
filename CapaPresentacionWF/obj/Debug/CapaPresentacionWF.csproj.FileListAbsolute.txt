@@ -32,3 +32,4 @@ C:\Users\Usuario\Documents\GitHub\ProyectoBD\CapaPresentacionWF\obj\Debug\CapaPr
 C:\Users\Usuario\Documents\GitHub\ProyectoBD\CapaPresentacionWF\obj\Debug\CapaPresentacionWF.Properties.Resources.resources
 C:\Users\Usuario\Documents\GitHub\ProyectoBD\CapaPresentacionWF\obj\Debug\CapaPresentacionWF.csproj.GenerateResource.Cache
 C:\Users\Usuario\Documents\GitHub\ProyectoBD\CapaPresentacionWF\obj\Debug\CapaPresentacionWF.MDIPrincipal.resources
+C:\Users\Usuario\Documents\GitHub\ProyectoBD\CapaPresentacionWF\obj\Debug\CapaPresentacionWF.MDIRecursos.resources

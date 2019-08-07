@@ -7,8 +7,8 @@
     <ProjectGuid>{F6B13ED5-3CB6-4116-A4DA-307A2378439B}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ClassLibrary2</RootNamespace>
-    <AssemblyName>ClassLibrary2</AssemblyName>
+    <RootNamespace>CapaDatos</RootNamespace>
+    <AssemblyName>CapaDatos</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -43,6 +43,7 @@
     <Compile Include="accesoDatosComentarios.cs" />
     <Compile Include="accesoDatosCuentas.cs" />
     <Compile Include="accesoDatosRecursos.cs" />
+    <Compile Include="accesoDatosRespaldoBD.cs" />
     <Compile Include="accesoDatosSolicitud.cs" />
     <Compile Include="accesoDatosUsuarios.cs" />
     <Compile Include="Conexion.cs" />

@@ -139,6 +139,21 @@ namespace CapaPresentacionWF
 
         private void buttonEliminar_Click(object sender, EventArgs e)
         {
+            int codigoSoli = Convert.ToInt32(dataGridViewSolicitud.CurrentRow.Cells["idsolicitud"].Value.ToString());
+            try
+            {
+                if (logicaNS.eliminarSolicitud(codigoSoli) > 0) //accede al metodo eliminar definido en CapaDatos
+                {
+                    MessageBox.Show("Eliminado con éxito!");
+                    dataGridViewSolicitud.DataSource = logicaNS.listarSolicitud(); //muestra la lista de datos existentes
+                }
+
+            }
+            catch
+            {
+
+                MessageBox.Show("ERROR al eliminar solicitud");
+            }
 
         }
 
@@ -151,7 +166,17 @@ namespace CapaPresentacionWF
             textBoxID.Text = dataGridViewSolicitud.CurrentRow.Cells["idsolicitud"].Value.ToString();
             textBoxAula.Text = dataGridViewSolicitud.CurrentRow.Cells["aula"].Value.ToString();
             textBoxNivel.Text = dataGridViewSolicitud.CurrentRow.Cells["nivel"].Value.ToString();
-            dateTimePickerFS = dataGridViewSolicitud.Value.ToString("dd,MM,yyyy");
+            dateTimePickerFS.Value = Convert.ToDateTime(dataGridViewSolicitud.CurrentRow.Cells["fechasolicitud"].Value);
+            dateTimePickerFS.Value = Convert.ToDateTime(dataGridViewSolicitud.CurrentRow.Cells["fechauso"].Value);
+            textBoxHoraInicio.Text = dataGridViewSolicitud.CurrentRow.Cells["horainicio"].Value.ToString();
+            textBoxHoraFinal.Text = dataGridViewSolicitud.CurrentRow.Cells["horafinal"].Value.ToString();
+            textBoxCarrera.Text = dataGridViewSolicitud.CurrentRow.Cells["carrera"].Value.ToString();
+            textBoxIDRecursos.Text = dataGridViewSolicitud.CurrentRow.Cells["idrecursos"].Value.ToString();
+            textBoxIDUsuario.Text = dataGridViewSolicitud.CurrentRow.Cells["idusuarios"].Value.ToString();
+            textBoxAsignatura.Text = dataGridViewSolicitud.CurrentRow.Cells["asignatura"].Value.ToString();
+
+            tabSolicitud.SelectedTab = tabPage1; 
+            buttonGuardar.Text = "Actualizar";
 
         }
     }

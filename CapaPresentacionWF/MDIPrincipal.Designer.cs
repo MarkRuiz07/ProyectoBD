@@ -32,6 +32,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MDIPrincipal));
             this.menuStrip = new System.Windows.Forms.MenuStrip();
             this.Inicio = new System.Windows.Forms.ToolStripMenuItem();
+            this.editRecursos = new System.Windows.Forms.ToolStripMenuItem();
             this.fileSolicitud = new System.Windows.Forms.ToolStripMenuItem();
             this.toolsMenu = new System.Windows.Forms.ToolStripMenuItem();
             this.optionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -60,7 +61,6 @@
             this.statusStrip = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
-            this.editRecursos = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip.SuspendLayout();
             this.toolStrip.SuspendLayout();
             this.statusStrip.SuspendLayout();
@@ -78,7 +78,7 @@
             this.menuStrip.Location = new System.Drawing.Point(0, 0);
             this.menuStrip.MdiWindowListItem = this.windowsMenu;
             this.menuStrip.Name = "menuStrip";
-            this.menuStrip.Size = new System.Drawing.Size(804, 24);
+            this.menuStrip.Size = new System.Drawing.Size(823, 24);
             this.menuStrip.TabIndex = 0;
             this.menuStrip.Text = "MenuStrip";
             // 
@@ -89,6 +89,13 @@
             this.Inicio.Size = new System.Drawing.Size(48, 20);
             this.Inicio.Text = "Inicio";
             this.Inicio.Click += new System.EventHandler(this.fileMenu_Click);
+            // 
+            // editRecursos
+            // 
+            this.editRecursos.Name = "editRecursos";
+            this.editRecursos.Size = new System.Drawing.Size(66, 20);
+            this.editRecursos.Text = "Recursos";
+            this.editRecursos.Click += new System.EventHandler(this.editRecursos_Click);
             // 
             // fileSolicitud
             // 
@@ -108,7 +115,7 @@
             // optionsToolStripMenuItem
             // 
             this.optionsToolStripMenuItem.Name = "optionsToolStripMenuItem";
-            this.optionsToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.optionsToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
             this.optionsToolStripMenuItem.Text = "&Opciones";
             // 
             // windowsMenu
@@ -225,7 +232,7 @@
             this.helpToolStripButton});
             this.toolStrip.Location = new System.Drawing.Point(0, 24);
             this.toolStrip.Name = "toolStrip";
-            this.toolStrip.Size = new System.Drawing.Size(804, 25);
+            this.toolStrip.Size = new System.Drawing.Size(823, 25);
             this.toolStrip.TabIndex = 1;
             this.toolStrip.Text = "ToolStrip";
             // 
@@ -301,7 +308,7 @@
             this.toolStripStatusLabel});
             this.statusStrip.Location = new System.Drawing.Point(0, 499);
             this.statusStrip.Name = "statusStrip";
-            this.statusStrip.Size = new System.Drawing.Size(804, 22);
+            this.statusStrip.Size = new System.Drawing.Size(823, 22);
             this.statusStrip.TabIndex = 2;
             this.statusStrip.Text = "StatusStrip";
             // 
@@ -311,18 +318,11 @@
             this.toolStripStatusLabel.Size = new System.Drawing.Size(42, 17);
             this.toolStripStatusLabel.Text = "Estado";
             // 
-            // editRecursos
-            // 
-            this.editRecursos.Name = "editRecursos";
-            this.editRecursos.Size = new System.Drawing.Size(66, 20);
-            this.editRecursos.Text = "Recursos";
-            this.editRecursos.Click += new System.EventHandler(this.editRecursos_Click);
-            // 
             // MDIPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(804, 521);
+            this.ClientSize = new System.Drawing.Size(823, 521);
             this.Controls.Add(this.statusStrip);
             this.Controls.Add(this.toolStrip);
             this.Controls.Add(this.menuStrip);

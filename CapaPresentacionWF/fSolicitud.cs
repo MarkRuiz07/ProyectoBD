@@ -172,13 +172,16 @@ namespace CapaPresentacionWF
             textBoxHoraFinal.Text = dataGridViewSolicitud.CurrentRow.Cells["horafinal"].Value.ToString();
             textBoxCarrera.Text = dataGridViewSolicitud.CurrentRow.Cells["carrera"].Value.ToString();
             textBoxIDRecursos.Text = dataGridViewSolicitud.CurrentRow.Cells["idrecursos"].Value.ToString();
-            textBoxIDUsuario.Text = dataGridViewSolicitud.CurrentRow.Cells["idusuarios"].Value.ToString();
+            textBoxIDUsuario.Text = dataGridViewSolicitud.CurrentRow.Cells["idusuario"].Value.ToString();
             textBoxAsignatura.Text = dataGridViewSolicitud.CurrentRow.Cells["asignatura"].Value.ToString();
 
-            tabSolicitud.SelectedTab = tabPage1; 
+            tabSolicitud.SelectedTab = tabPage1;
             buttonGuardar.Text = "Actualizar";
 
         }
     }
+
+   
+    }
     
-}
+

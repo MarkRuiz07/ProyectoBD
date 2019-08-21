@@ -19,6 +19,7 @@ namespace CapaDatos
             try
             {
                 SqlConnection cnx = cn.conectar();
+                cm = new SqlCommand("RespaldoBD_GER", cnx);
                 cm.CommandType = CommandType.StoredProcedure;
                 cnx.Open();
                 cm.ExecuteNonQuery();

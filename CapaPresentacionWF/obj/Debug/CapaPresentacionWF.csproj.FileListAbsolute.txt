@@ -22,10 +22,8 @@ C:\Users\Usuario\Documents\GitHub\ProyectoBD\CapaPresentacionWF\bin\Debug\CapaPr
 C:\Users\Usuario\Documents\GitHub\ProyectoBD\CapaPresentacionWF\bin\Debug\CapaPresentacionWF.pdb
 C:\Users\Usuario\Documents\GitHub\ProyectoBD\CapaPresentacionWF\bin\Debug\CapaNegocio.dll
 C:\Users\Usuario\Documents\GitHub\ProyectoBD\CapaPresentacionWF\bin\Debug\ClassLibrary1.dll
-C:\Users\Usuario\Documents\GitHub\ProyectoBD\CapaPresentacionWF\bin\Debug\ClassLibrary2.dll
 C:\Users\Usuario\Documents\GitHub\ProyectoBD\CapaPresentacionWF\bin\Debug\CapaNegocio.pdb
 C:\Users\Usuario\Documents\GitHub\ProyectoBD\CapaPresentacionWF\bin\Debug\ClassLibrary1.pdb
-C:\Users\Usuario\Documents\GitHub\ProyectoBD\CapaPresentacionWF\bin\Debug\ClassLibrary2.pdb
 C:\Users\Usuario\Documents\GitHub\ProyectoBD\CapaPresentacionWF\obj\Debug\CapaPresentacionWF.csprojResolveAssemblyReference.cache
 C:\Users\Usuario\Documents\GitHub\ProyectoBD\CapaPresentacionWF\obj\Debug\CapaPresentacionWF.fRecursos.resources
 C:\Users\Usuario\Documents\GitHub\ProyectoBD\CapaPresentacionWF\obj\Debug\CapaPresentacionWF.fSolicitud.resources
@@ -33,3 +31,5 @@ C:\Users\Usuario\Documents\GitHub\ProyectoBD\CapaPresentacionWF\obj\Debug\CapaPr
 C:\Users\Usuario\Documents\GitHub\ProyectoBD\CapaPresentacionWF\obj\Debug\CapaPresentacionWF.csproj.GenerateResource.Cache
 C:\Users\Usuario\Documents\GitHub\ProyectoBD\CapaPresentacionWF\obj\Debug\CapaPresentacionWF.MDIPrincipal.resources
 C:\Users\Usuario\Documents\GitHub\ProyectoBD\CapaPresentacionWF\obj\Debug\CapaPresentacionWF.MDIRecursos.resources
+C:\Users\Usuario\Documents\GitHub\ProyectoBD\CapaPresentacionWF\bin\Debug\CapaDatos.dll
+C:\Users\Usuario\Documents\GitHub\ProyectoBD\CapaPresentacionWF\bin\Debug\CapaDatos.pdb

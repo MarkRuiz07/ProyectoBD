@@ -68,21 +68,7 @@ namespace CapaPresentacionWF
         {
         }
 
-        private void ToolBarToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                if (LN.respaldarBD()>0)
-                {
-                    MessageBox.Show("Respaldo realizado con éxito");
-                }
-            }
-            catch 
-            {
-                MessageBox.Show("Error al realizar el respaldo");
-                
-            }
-        }
+        
 
         
 
@@ -144,6 +130,37 @@ namespace CapaPresentacionWF
                                                                     "Cerrar la Aplicacion", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             return res;
 
+        }
+
+        private void respaldoBDBarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (LN.respaldarBD() > 0)
+                {
+                    MessageBox.Show("Respaldo realizado con éxito");
+                }
+            }
+            catch
+            {
+                MessageBox.Show("Error al realizar el respaldo");
+
+            }
+        }
+
+        private void undoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (Application.OpenForms["fSolicitud"] != null)
+            {
+                Application.OpenForms["fSolicitud"].Activate();
+            }
+
+            else
+            {
+                fSolicitud fs = new fSolicitud();
+                fs.MdiParent = this;
+                fs.Show();
+            }
         }
     }
 }
